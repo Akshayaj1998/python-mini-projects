@@ -8,5 +8,4 @@ r= requests.get(url)
 soup= bs(r.content, 'html.parser')
 profile_image= soup.find('img', {'width' :'260'})['src']
 print(profile_image)
-print("wait...")
 print('Click on the above link to see your profile\nThanks')
